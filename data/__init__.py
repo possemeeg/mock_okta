@@ -8,7 +8,7 @@ class TestUsers(object):
 
     def get_user(self, uid_or_email):
         ret = {v['id']: v for k, v in self.users.items()}.get(uid_or_email) or \
-            {v['email']: v for k, v in self.users.items()}.get(uid_or_email)
+            {v['profile']['email'].lower(): v for k, v in self.users.items()}.get(uid_or_email.lower())
         print('Ret:', ret)
         return ret
 

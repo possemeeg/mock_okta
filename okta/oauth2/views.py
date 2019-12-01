@@ -1,8 +1,7 @@
-from flask import Blueprint, redirect, request
+from flask import Blueprint, redirect, request, make_response, jsonify
 from flask_restful import Resource
 import urllib.parse as urlp
 from data import test_users
-from flask import jsonify
 from okta import flask_api, flask_app, logged_in_users
 import jwt
 import time
@@ -53,7 +52,7 @@ def tokeintrospection():
             'token_type': 'Bearer',
             'scope': 'openid profile',
             'client_id': 'dummy',
-            'username': user_rec['user']['email'],
+            'username': user_rec['user']['profile']['email'],
             'exp': token['exp'],
             'iat': token['iat'],
             'sub': token['sub'],
@@ -69,7 +68,7 @@ def tokeintrospection():
 def userinfo():
     session_tokens = request.headers['Authorization'].split()
     if len(session_tokens) < 2:
-        return make_response('{}', 401)
+        return make_response(jsonify({}), 401)
 
     session_token = _sess_from_tok(session_tokens[1])
     user_rec = logged_in_users[session_token]
