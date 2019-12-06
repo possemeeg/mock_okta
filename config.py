@@ -4,6 +4,6 @@ class BaseConfig(object):
 
 class DevelopmentConfig(BaseConfig):
     DEBUG = True
-    CR_TEST_USERS = '../clubresults/src/python/testusers.json'
+    CR_TEST_USERS = '/home/peter/Desktop/test_users.csv'
 
 

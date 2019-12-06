@@ -1,0 +1,121 @@
+{
+    "mpete": {
+        "active": true,
+        "scopes": "",
+        "uid": "pm02",
+        "sub": "pm02",
+        "id": "pm02",
+        "username": "p@g.c",
+        "email": "p@g.c",
+        "name": "Mini Pete",
+        "firstName": "Mini",
+        "lastName": "Pete",
+        "profile": {
+            "email": "p@g.c",
+            "login": "p@g.c",
+            "clubResultsAdmin": false
+        }
+    },
+    "npete": {
+        "active": true,
+        "scopes": "",
+        "uid": "pm03",
+        "sub": "pm03",
+        "id": "pm03",
+        "username": "ncp@g.c",
+        "email": "ncp@g.c",
+        "name": "No Club Pete",
+        "firstName": "NoClub",
+        "lastName": "Pete",
+        "profile": {
+            "email": "ncp@g.c",
+            "login": "ncp@g.c",
+            "clubResultsAdmin": false
+        }
+    },
+    "pete": {
+        "active": true,
+        "scopes": "",
+        "uid": "pm01",
+        "sub": "pm01",
+        "id": "pm01",
+        "username": "pm@gmail.com",
+        "email": "pm@gmail.com",
+        "name": "Pete",
+        "firstName": "Peter",
+        "lastName": "Metcalf",
+        "profile": {
+            "email": "pm@gmail.com",
+            "login": "pm@gmail.com",
+            "clubResultsAdmin": false
+        }
+    },
+    "mell": {
+        "active": true,
+        "scopes": "",
+        "uid": "mj01",
+        "sub": "mj01",
+        "id": "mj01",
+        "username": "mj@gmail.com",
+        "email": "mj@gmail.com",
+        "name": "Mell",
+        "firstName": "Melloney",
+        "lastName": "Johns",
+        "profile": {
+            "email": "mj@gmail.com",
+            "login": "mj@gmail.com",
+            "clubResultsAdmin": false
+        }
+    },
+    "widgit": {
+        "active": true,
+        "scopes": "",
+        "uid": "wj01",
+        "sub": "wj01",
+        "username": "wj@gmail.com",
+        "email": "wj@gmail.com",
+        "id": "wj01",
+        "name": "Widgit",
+        "firstName": "Kytto",
+        "lastName": "Loxley",
+        "profile": {
+            "email": "wj@gmail.com",
+            "login": "wj@gmail.com",
+            "clubResultsAdmin": false
+        }
+    },
+    "nobody": {
+        "active": true,
+        "scopes": "",
+        "uid": "n1",
+        "sub": "n1",
+        "id": "n1",
+        "username": "n@g.c",
+        "email": "n@g.c",
+        "name": "Nobidy",
+        "firstName": "Nobidy",
+        "lastName": "Nobidy",
+        "profile": {
+            "email": "n@g.c",
+            "login": "n@g.c",
+            "clubResultsAdmin": false
+        }
+    },
+    "bollocks": {
+        "active": true,
+        "scopes": "",
+        "uid": "bollocks",
+        "sub": "bollocks",
+        "id": "bollocks",
+        "username": "bollocks@google.com",
+        "email": "bollocks@google.com",
+        "name": "bollocks",
+        "firstName": "bollocks",
+        "lastName": "bollocks",
+        "profile": {
+            "email": "bollocks@google.com",
+            "login": "bollocks@google.com",
+            "clubResultsAdmin": false
+        }
+    }
+}

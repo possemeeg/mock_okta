@@ -64,14 +64,21 @@ def tokeintrospection():
     return jsonify(resp)
 
 
-@oauth2.route('/v1/userinfo')
+@oauth2.route('/v1/userinfo', methods=['POST','GET',])
 def userinfo():
-    session_tokens = request.headers['Authorization'].split()
-    if len(session_tokens) < 2:
+    token = _get_token()
+    if not token:
         return make_response(jsonify({}), 401)
 
-    session_token = _sess_from_tok(session_tokens[1])
+    session_token = _sess_from_tok(token)
     user_rec = logged_in_users[session_token]
 
     return jsonify(user_rec['user'])
 
+def _get_token():
+    if 'Authorization' in request.headers and request.headers['Authorization'].startswith('Bearer '):
+        return request.headers['Authorization'].split(None,1)[1].strip()
+    if 'access_token' in request.form:
+        return request.form['access_token']
+    elif 'access_token' in request.args:
+        return request.args['access_token']
