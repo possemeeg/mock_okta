@@ -54,7 +54,7 @@ def users_del(uid_or_email):
     # fake it
     return jsonify({})
 
-@api.route('v1/users/<uid_or_email>/lifecycle/deactivate', methods=['POST'])
-def users_deactivate(uid_or_email):
+@api.route('v1/users/me', methods=['POST'])
+def users_update():
     # fake it
     return jsonify({})

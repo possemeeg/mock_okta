@@ -30,6 +30,8 @@ class TestUsers(object):
                 'firstName': firstname,
                 'lastName': lastname,
                 'profile': {
+                    'firstName': firstname,
+                    'lastName': lastname,
                     'email': email,
                     'login': email,
                     'clubResultsAdmin': get('admin') == 'true'
